@@ -21,7 +21,7 @@ const Home:React.FC<IndexProps>=({allPostsData})=>{
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>a cool man</p>
+        <p>hello world</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
           <a href="https://www.nextjs.cn/learn">our Next.js tutorial</a>.)
