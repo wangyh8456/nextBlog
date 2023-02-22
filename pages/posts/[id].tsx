@@ -11,6 +11,12 @@ import utilStyles from '../../styles/utils.module.css';
 import type {Info} from '../../Types';
 
 const fetcher = (url: string) => fetch(url,{method:'POST',body:JSON.stringify({name:'Jack',age:'15'})}).then((res) => res.json());
+// const fetcher2 = (url: string) => {
+//   return fetch(url,{
+//     method:'POST',
+//     body:JSON.stringify({username:'admin',password:'123456'}
+//   )}).then((res) => res.json());
+// }
 
 type IdProps={
   postData:Post,
@@ -19,6 +25,7 @@ type IdProps={
 
 const Post:React.FC<IdProps>=({postData})=>{
   const {query}=useRouter();
+  // const { data:data2 } = useSwr<any>(`/EXapi/user/login`, fetcher2)
   const { data, error, isLoading } = useSwr<Info>(`/api/hello/${query.id}`, fetcher)
   return (
     <Layout home={false}>
