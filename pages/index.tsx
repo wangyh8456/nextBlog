@@ -4,7 +4,7 @@ import Layout, { siteTitle } from '../components/Layout';
 import utilStyles from '../styles/utils.module.css';
 import {getSortedPostsData} from '../lib/post';
 import { GetStaticProps } from 'next';
-import {Post} from '../Types';
+import type {Post} from '../Types';
 import Link from 'next/link';
 import Date from '../components/date';
 // import {Login} from '../lib/api/index';

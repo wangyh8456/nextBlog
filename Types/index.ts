@@ -4,3 +4,8 @@ export type Post={
     title:string,
     [propName: string]: any;
 }
+
+export type Info={
+    content:string,
+    [propName:string]:any
+}
